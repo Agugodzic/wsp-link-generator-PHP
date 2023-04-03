@@ -1,0 +1,25 @@
+#header{
+  width: 100vw;
+  height: 40vh;
+  position:absolute;
+  background-color:#00ac81;
+  top:0;
+  left:0;
+}
+#logo-container{
+  position:absolute;
+  top:15px;
+  left:15px;
+  display:flex;
+  align-items: center;
+}
+#logo-wsp{
+  height:40px;
+  margin-right: 5px;
+}
+#logo-text{
+  color:white;
+  font-weight: 500;
+  font-size: 15px;
+  transform:translateY(-2px)
+}

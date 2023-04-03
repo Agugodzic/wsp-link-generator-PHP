@@ -1,0 +1,120 @@
+body{
+  background-image: url('https://thumbs.dreamstime.com/b/esquema-de-medios-sociales-sin-problemas-patr%C3%B3n-doodle-boceto-vector-fisuras-iconos-grises-en-fondo-blanco-174378665.jpg');
+  display:flex;
+  align-items: center;
+  height: 95vh;
+  text-align: center;
+  background-color: rgb(0, 179, 68);
+  font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#content{
+  background-color: rgb(255, 251, 251);
+  height: 80vh;
+  width: 68vw;
+  margin: 0 auto;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 1px;
+  box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.377);
+  z-index:2000;
+  align-items: baseline;
+}
+
+.button1{
+  background-color:#00ac81;
+  color:white;
+  font-weight: 500;
+  border-radius: 2px;
+  border-style: none;
+  font-size: 17px;
+  padding: 4px 15px;
+  margin:15px auto;
+  cursor:pointer;
+  width: 100%;
+  height: 35px;
+  box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.199);
+}
+.button1:hover{
+  background-color:#00ac81e1;
+}
+
+.button2{
+  background-color:#f0eeeeef;
+  color:rgb(70, 70, 70);
+  font-weight: 500;
+  border-radius: 2px;
+  border-style: none;
+  font-size: 17px;
+  padding: 4px 15px;
+  margin:15px auto;
+  cursor:pointer;
+  width: 100%;
+  height: 35px;
+  box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.137);
+  border-style: solid;
+  border-width: 1px;
+  border-color:#e6e6e6;
+}
+.button2:hover{
+  background-color:#e9e9e9;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+p{
+  margin-bottom:5px;
+  margin-top:25px;
+}
+
+.button3{
+  display: inline;
+  border-style: none;
+  background-color: rgba(0, 0, 255, 0);
+  font-weight: 500;
+  color:rgb(114, 114, 114);
+  font-size: 16px;
+  padding:0;
+  margin:auto;
+  padding: 0px 20px 0px 7px;
+  cursor:pointer;
+  text-align: left;
+}

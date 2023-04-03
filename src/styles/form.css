@@ -1,0 +1,43 @@
+#form{
+ width: 37vw;
+
+}
+#result{
+  width: 37vw;
+  padding:20px;
+}
+
+#form-title{
+  display:block;
+  margin:0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  margin-top:30px;
+}
+
+#form-container{
+text-align: center;
+ display:flex;
+ flex-grow: 2;
+ width: 68vw;
+ margin: 0 auto;
+}
+
+#form-content{
+  text-align: left;
+  width: 25vw;
+  margin: 0px auto;
+  padding: 0 15px;
+
+}
+
+#result-content{
+  text-align: left;
+  width: 25vw;
+  margin: 0px auto;
+  padding: 0 15px;
+}
+
+form{
+  padding:0;
+}
