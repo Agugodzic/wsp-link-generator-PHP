@@ -21,9 +21,9 @@ if(isset($_GET['notification']) && !isset($_GET['phone'])){
 if(isset($_GET['phone']) && isset($_GET['textarea'])){
   $text = $_GET['textarea'];
   if(strlen($text)>0){
-    $linkWsp = "https://api.whatsapp.com/send?phone=+".$phone."&text=".urlencode($text);
+    $linkWsp = "https://api.whatsapp.com/send?phone=".urlencode($phone)."&text=".urlencode($text);
   }else{
-    $linkWsp = "https://api.whatsapp.com/send?phone=+".$phone;
+    $linkWsp = "https://api.whatsapp.com/send?phone=".urlencode($phone);
   };
 }; 
 
