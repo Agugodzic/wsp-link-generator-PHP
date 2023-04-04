@@ -57,7 +57,7 @@ if(isset($_GET['generate-button']) && !isset($_GET['phone'])){
             <input value=<?="'$phone'"?> name="phone">
             <p id="input-danger"><?= $inputMessage ?></p>
             <p>Mensaje predefinido: (opcional)</p>
-            <textarea name="textarea"><?= $text ?></textarea>
+            <textarea class="textarea" name="textarea"><?= $text ?></textarea>
             <button onclick="" type="submit" class="button1">Generar</button>
           </form>
         </div>
@@ -65,7 +65,7 @@ if(isset($_GET['generate-button']) && !isset($_GET['phone'])){
       <div id="result">
         <div id="result-content">
           <p>Tu link:</p>
-          <textarea rows="10" cols="40"><?= $linkWsp ?></textarea>
+          <textarea class="textarea"><?= $linkWsp ?></textarea>
           <button onclick=copyLink() class="button2">Copiar link</button>
           <button onclick=generateButton() class="button1">Generar boton html - css</button>
         </div>

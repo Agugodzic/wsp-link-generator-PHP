@@ -40,7 +40,7 @@ if(isset($_GET['phone']) && isset($_GET['textarea'])){
   <script>
     function volver(){
     let URL = window.location;
-    window.location = "wsp-link-generator-php-production.up.railway.app";
+    window.location = "";
     }
   </script>
 
@@ -51,7 +51,7 @@ if(isset($_GET['phone']) && isset($_GET['textarea'])){
     <div id="result">
       <div id="result-content">
         <p>codigo HTML:</p>
-        <textarea rows="14" cols="40"><?= $html ?></textarea>
+        <textarea class="textareaCode" rows="14" cols="40"><?= $html ?></textarea>
         <button onclick="copyHtml()" class="button1">Copiar HTML</button>
       </div>
     </div>
@@ -59,7 +59,7 @@ if(isset($_GET['phone']) && isset($_GET['textarea'])){
       <div id="result">
         <div id="result-content">
           <p>codigo CSS:</p>
-          <textarea rows="14" cols="40"><?=$css?></textarea>
+          <textarea class="textareaCode" rows="14" cols="40"><?=$css?></textarea>
           <button onclick="copyCss()" class="button2">Copiar CSS</button>
         </div>
       </div>
