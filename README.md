@@ -1,0 +1,1 @@
+WspLinkGenerator es una aplicacion cuya funcion principal es la de generar un link personalizado a un chat de Whatsapp. Incluye ademas la funcion de generar un boton flotante en HTML Y CSS con la finalidad de ser incrustado en otra aplicacion Web.![linkGenerator](https://user-images.githubusercontent.com/90270276/229880654-3c368ad6-eb2c-49a5-962b-91fdbc3235b4.png)
