@@ -1,23 +1,18 @@
 <?php 
   include 'src/head.php';
-  include 'src/footer.php';
-  include 'src/components/form.php';
   include 'src/components/header.php';
-  include 'src/components/generateButton.php';
+  include 'src/components/notification.php';
+
   //include 'src/components/notification.php';
 
-  head();
-
   if(isset($_GET['generate-button']) && !isset($_GET['phone'])){
-    form();
+    include_once('src/components/form.php');
   }else if(!isset($_GET['generate-button'])){
-    form();
+    include_once('src/components/form.php');
   }
   else{
-    generateButton();
+    include_once('src/components/generateButton.php');
   };
 
-  footer();
-
-
+  include 'src/footer.php';
 ?>

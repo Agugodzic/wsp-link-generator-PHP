@@ -16,7 +16,7 @@
 }
 
 #form-container{
-text-align: center;
+ text-align: center;
  display:flex;
  flex-grow: 2;
  width: 68vw;
@@ -40,4 +40,35 @@ text-align: center;
 
 form{
   padding:0;
+}
+
+#input-danger{
+  height: 15px;
+  margin:0;
+  position:absolute;
+  color:rgb(189, 15, 15);
+  font-size: 14px;
+  transform: translateY(-8px);
+}
+
+@media screen and (max-width: 800px) {
+  #form-container{
+    display: block;
+    width: 85vw;
+  }
+  #form-content{
+    width: 75vw;
+    display: block;
+    margin:0 auto;
+
+  }
+  #result-content{
+    display: block;
+    width: 75vw;
+    padding:0;
+    margin:0 auto;
+  }
+  #form-title{
+    font-size: 22px;
+  }
 }

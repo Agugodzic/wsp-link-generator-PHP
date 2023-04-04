@@ -4,7 +4,7 @@
     <script>
       function buttonFunction(){
         let URL = window.location.toString();
-        URL = URL.substr(0, URL.length - 13);
+        URL = URL.substr(0, URL.length - 14);
         window.location = URL;
       }
     </script>

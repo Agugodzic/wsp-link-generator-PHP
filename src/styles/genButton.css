@@ -1,11 +1,13 @@
-.button3{
+.button-back{
   display: inline;
   border-style: none;
   background-color: rgba(0, 0, 255, 0);
   font-weight: 600;
-  color:rgb(0, 0, 255);
+  font-size: 15px;
+  color:rgb(97, 97, 97);
   padding:0;
-  margin:auto;
   padding: 0px 20px 0px 7px;
   cursor:pointer;
+  text-align: start;
+  margin-bottom: 15px;
 }
