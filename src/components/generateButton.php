@@ -18,7 +18,7 @@ if(isset($_GET['notification'])){
 };
 
 if(isset($_GET['phone']) && isset($_GET['textarea'])){
-  $linkWsp = "https://api.whatsapp.com/send?phone=+".$phone."&text=".urlencode($text);
+  $linkWsp = "https://api.whatsapp.com/send?phone=".urlencode($phone)."&text=".urlencode($text);
   $html = "<a target='_blank' href='".$linkWsp."'><img class='wsp-link-button' src='https://i.postimg.cc/Dwr0RGPv/1490889687-whats-app-82529.png'></a>";
   $css = ".wsp-link-button{position: fixed;height: 45px;bottom: 30px;right: 20px;cursor: pointer;animation-name: wsp-animation;animation-duration: 1s;}.wsp-link-button:hover {height: 55px;}@keyframes wsp-animation {0% {opacity: 0%;}100% {}}";
 };
@@ -40,7 +40,7 @@ if(isset($_GET['phone']) && isset($_GET['textarea'])){
   <script>
     function volver(){
     let URL = window.location;
-    window.location = "http://localhost/wsp-link-generator/";
+    window.location = "wsp-link-generator-php-production.up.railway.app";
     }
   </script>
 

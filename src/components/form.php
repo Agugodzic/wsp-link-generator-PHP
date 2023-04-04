@@ -24,8 +24,7 @@ if(isset($_GET['phone']) && isset($_GET['textarea'])){
     $linkWsp = "https://api.whatsapp.com/send?phone=+".$phone."&text=".urlencode($text);
   }else{
     $linkWsp = "https://api.whatsapp.com/send?phone=+".$phone;
-  }
-
+  };
 }; 
 
 if(isset($_GET['generate-button']) && !isset($_GET['phone'])){
@@ -55,10 +54,10 @@ if(isset($_GET['generate-button']) && !isset($_GET['phone'])){
         <div id="form-content">
           <form method="get">
             <p>Numero de celular:</p>
-            <input value=<?="'$phone'"?>type="tel" name="phone">
+            <input value=<?="'$phone'"?> name="phone">
             <p id="input-danger"><?= $inputMessage ?></p>
             <p>Mensaje predefinido: (opcional)</p>
-            <textarea name="textarea" rows="10" cols="40"><?= $text ?></textarea>
+            <textarea name="textarea"><?= $text ?></textarea>
             <button onclick="" type="submit" class="button1">Generar</button>
           </form>
         </div>
