@@ -40,7 +40,7 @@ if(isset($_GET['phone']) && isset($_GET['textarea'])){
   <script>
     function volver(){
     let URL = window.location;
-    window.location = "";
+    window.location = "https://wsp-link-generator-php-production.up.railway.app";
     }
   </script>
 
