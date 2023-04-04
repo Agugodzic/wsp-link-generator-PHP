@@ -14,6 +14,7 @@ a {
 
 #content{
   background-color: rgb(255, 251, 251);
+  min-height: fit-content;
   height: 80vh;
   width: 68vw;
   margin: 0 auto;

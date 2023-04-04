@@ -15,11 +15,17 @@ if(isset($_GET['textarea'])){
 if(isset($_GET['notification']) && !isset($_GET['phone'])){
   notification('El campo se encuentra vacio','Ok');
 }else if(isset($_GET['notification'])){
-  notification('texto copiado al portapapeles','Ok');
+  notification('Link copiado al portapapeles','Ok');
 };
 
 if(isset($_GET['phone']) && isset($_GET['textarea'])){
+  $text = $_GET['textarea'];
+  if(strlen($text)>0){
     $linkWsp = "https://api.whatsapp.com/send?phone=+".$phone."&text=".urlencode($text);
+  }else{
+    $linkWsp = "https://api.whatsapp.com/send?phone=+".$phone;
+  }
+
 }; 
 
 if(isset($_GET['generate-button']) && !isset($_GET['phone'])){
@@ -31,7 +37,7 @@ if(isset($_GET['generate-button']) && !isset($_GET['phone'])){
 
 <script>
   async function copyLink(){
-    await navigator.clipboard.writeText("'.$linkWsp.'");
+    await navigator.clipboard.writeText("<?=$linkWsp?>");
     let URL = window.location;
     window.location = URL + "?&notification";
   }
